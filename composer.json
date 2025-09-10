@@ -1,6 +1,23 @@
 {
-    "require-dev": {
-        "phpunit/phpunit": "^9.6"
+  "name": "miropay/payment-sdk",
+  "description": "PHP SDK for integrating with the Miropay Payment System.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Duniyal Rasouli",
+      "email": "duniyalr@gmail.com"
     }
- }
- 
+  ],
+  "require": {
+    "php": ">=7.4",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Miropay\\PaymentSDK\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
